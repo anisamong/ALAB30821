@@ -6,64 +6,102 @@ const area = PI * radius * radius
 
 let plants = 20
 let minSpacePerPlant = 0.8
-let capacity = 0
+let maxCapacity = 0
 
 
-// plants = plants * 2
-// capacity = plants * minSpacePerPlant
+// plants = plants
+// maxCapacity = plants * minSpacePerPlant
 // console.log("The number of plants for week 1 is " + plants)
 
-// console.log("The capacity is " + capacity)
+// console.log("The maxCapacity is " + maxCapacity)
 
-// if (capacity > area * 0.8) {
+// if (maxCapacity > area * 0.8) {
 //   console.log("Week 1 maximum capacity is over 80%. Garden needs to be pruned.")
 
-// } else if(capacity >= area * 0.5) {
+// } else if(maxCapacity >= area * 0.5) {
 // console.log("Week 1 maximum capacity is between 50% to 80%. Garden needs to be monitored.")
 
 // } else {
 //   console.log("week 1 maximum capacity is less than 50%. There is room to plant more.")
 // }
 
-// Part 1 Week 2
-// plants = (plants * 2) * 2
-// capacity = plants * minSpacePerPlant
+// // Part 1 Week 2
+// plants = plants * 2
+// maxCapacity = plants * minSpacePerPlant
 // console.log("The number of plants for week 2 is " + plants)
 
-// console.log("The capacity is " + capacity)
+// console.log("The maxCapacity is " + maxCapacity)
 
-// if (capacity > area * 0.8) {
+// if (maxCapacity > area * 0.8) {
 //   console.log("Week 2 maximum capacity is over 80%. Garden needs to be pruned.")
 
-// } else if(capacity >= area * 0.5) {
+// } else if(maxCapacity >= area * 0.5) {
 // console.log("Week 2 maximum capacity is between 50% to 80%. Garden needs to be monitored.")
 
 // } else {
 //   console.log("week 2 maximum capacity is less than 50%. There is room to plant more.")
 // }
 
-// Part 1 Week 3
-plants = (plants * 2) * (2 * 2)
-capacity = plants * minSpacePerPlant
-console.log("The number of plants for week 3 is " + plants)
+// // Part 1 Week 3
+// plants = (plants * 2) * 2
+// maxCapacity = plants * minSpacePerPlant
+// console.log("The number of plants for week 3 is " + plants)
 
-console.log("The capacity is " + capacity)
+// console.log("The maxCapacity is " + maxCapacity)
 
-if (capacity > area * 0.8) {
-  console.log("Week 3 maximum capacity is over 80%. Garden needs to be pruned.")
+// if (maxCapacity > area * 0.8) {
+//   console.log("Week 3 maximum capacity is over 80%. Garden needs to be pruned.")
 
-} else if(capacity >= area * 0.5) {
-console.log("Week 3 maximum capacity is between 50% to 80%. Garden needs to be monitored.")
+// } else if(maxCapacity >= area * 0.5) {
+// console.log("Week 3 maximum capacity is between 50% to 80%. Garden needs to be monitored.")
 
-} else {
-  console.log("week 3 maximum capacity is less than 50%. There is room to plant more.")
-}
-// Part 2
+// } else {
+//   console.log("week 3 maximum capacity is less than 50%. There is room to plant more.")
+// }
 
 
+// // Part 2
+plants = 100 
+// maxCapacity = plants * growth rate * minSpacePerPlant
+maxCapacity = plants * (2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2) *
+minSpacePerPlant 
+radius = Math.sqrt((maxCapacity / PI))
+console.log("The number of plants for week 10 is " + plants)
+console.log("The Additional Capacity needed is " + maxCapacity)
+console.log("The radius for the expanded garden is " + radius)
+
+if (maxCapacity > area * 0.8) {
+    console.log("It's been 10 weeks! Your garden's maximum capacity is over 80%. Time to pruned.")
+  
+  } else if(maxCapacity >= area * 0.5) {
+  console.log("It's been 10 weeks! Your garden's maximum capacity is between 50% to 80%. It should be monitored.")
+  
+  } else {
+    console.log("It's been 10 weeks! Your garden's maximum capacity is less than 50%. There is room to plant more.")
+  }
 
 
 // Part 3
+
+// try {
+//   if (maxCapacity > area * 0.8) {
+//     console.log("It's been 10 weeks! Your garden's maximum capacity is over 80%.")
+//   throw "Error - Garden is over capacity. "
+
+// } else if(maxCapacity >= area * 0.5) {
+//   console.log("It's been 10 weeks! Your garden's capacity is between 50% to 80%. It needs to be monitored")
+
+// } else {
+//   console.log("It's been 10 weeks! Your garden's capacity is below 50! You have enough capacity to plant more.")
+// }
+// }
+// catch (error) {
+//   console.log(error)
+// } finally {
+//   console.log(maxCapacity)
+// }
+
+
 
 
 // let growth = 2
@@ -76,7 +114,7 @@ console.log("Week 3 maximum capacity is between 50% to 80%. Garden needs to be m
 
 // area after 10 weeks starting with 100 plants capacity / pi / 2
 
-// capacity = plants * growth rate * 
+
 
 // capacity = 102400
 // radius = 
